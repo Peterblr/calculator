@@ -1,0 +1,14 @@
+.btn {
+    line-height: 1;
+
+    border-radius: 20px;
+    text-align: center;
+    transition: 500ms all;
+    display: grid;
+    place-content: center;
+}
+
+.btn:hover {
+    background: rgba(22, 236, 161, 0.3);
+    transform: scale(1.1);
+}

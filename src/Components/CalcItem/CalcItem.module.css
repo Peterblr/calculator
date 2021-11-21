@@ -1,0 +1,20 @@
+.form {
+    position: absolute;
+    z-index: 1;
+    top: 5vh;
+    left: 40vw;
+    width: 300px;
+    height: 600px;
+    border-radius: 15px;
+    background: rgba(141, 139, 139, 0.2);
+    backdrop-filter: blur(8px);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.562);
+}
+
+@media (max-width: 430px) {
+    .form {
+        top: 5vh;
+        left: 5vw;
+
+    }
+}
