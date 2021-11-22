@@ -1,11 +1,12 @@
 .btn {
     line-height: 1;
-
+    font-size: 24px;
     border-radius: 20px;
     text-align: center;
     transition: 500ms all;
     display: grid;
     place-content: center;
+    padding: 20px;
 }
 
 .btn:hover {

@@ -3,8 +3,10 @@ import s from "./Button.module.css";
 
 function Button({ onClick, value }) {
   return (
-    <div className={s.btn}>
-      <button onClick={onClick}>{value}</button>
+    <div>
+      <button className={s.btn} onClick={onClick}>
+        {value}
+      </button>
     </div>
   );
 }
