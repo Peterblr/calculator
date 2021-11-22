@@ -1,33 +1,45 @@
 import React from "react";
 import Button from "../Button/Button";
-import s from "./Keypad.module.css";
+import "./Keypad.css";
 
 function Keypad() {
   const buttonValue = [
-    { id: 1, value: "C" },
+    { value: "C" },
+    { value: "del" },
     { value: "/" },
     { value: "*" },
-    { value: "-" },
     { value: "7" },
     { value: "8" },
     { value: "9" },
+    { value: "+" },
     { value: "4" },
     { value: "5" },
     { value: "6" },
-    { value: "+" },
+    { value: "-" },
     { value: "1" },
     { value: "2" },
     { value: "3" },
+    { value: "=" },
     { value: "0" },
     { value: "." },
-    { value: "=" },
   ];
+
   return (
-    <div className={s.keypad}>
-      {buttonValue.map((index) => (
-        <div>
+    <div className="keypad">
+      {buttonValue.map((index, key) => (
+        <div
+          className={
+            index.value === "="
+              ? "equals"
+              : "" /* || index.value === "+"
+              ? "equals"
+              : "" */ || index.value === "0"
+              ? "equals_zero"
+              : ""
+          }
+        >
           <Button
-            className={index.value === "=" ? `${s.equals}` : ``}
+            key={key}
             value={index.value}
             onClick={() => {
               alert(`${index.value}`);
